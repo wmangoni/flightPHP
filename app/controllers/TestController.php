@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-class TestController {
+class TestController extends Controller {
 
 	public function __construct() {
 		$this->arr['title'] = 'Teste';
