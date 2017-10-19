@@ -20,5 +20,9 @@ Flight::route('/teste', function() {
 	$ctrl = new TestController();
 	Flight::render('teste.php', $ctrl->index());
 });
+Flight::map('notFound', function(){
+    // Display custom 404 page
+    Flight::render('404.php', ['title' => '404']);
+});
 
 Flight::start();
